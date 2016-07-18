@@ -1,9 +1,11 @@
 @import './styles/palette'
-$pmg-h-padding = 40px
-$pmg-v-padding = 4px
+@import './styles/mixins'
+@import './styles/variables'
+
+
 .pmg-button.button
   display inline-block
-  background linear-gradient(to right, $green, $blue);
+  button-bg()
   border none
   color white
   padding-left $pmg-h-padding
@@ -16,4 +18,8 @@ $pmg-v-padding = 4px
 ul {
   padding: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0
 }

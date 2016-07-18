@@ -29,7 +29,7 @@ html, body
   height 100%
   width 100%
 body
-  background: linear-gradient(to bottom right, $blue, $green);
+  background linear-gradient(to bottom right, $blue, $green)
 
 #app
   height 100%
@@ -41,6 +41,7 @@ body
 
 .router-view
   margin-left $sidebar-width
+  padding-left 40px
 
 .fade-transition
   transition opacity .2s ease
