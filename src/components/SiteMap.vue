@@ -55,7 +55,7 @@ export default {
 
 <style lang="stylus">
 @import '../styles/palette'
-
+$border = 1px solid #eee
 .site-map
   ul
     width 100%
@@ -69,6 +69,10 @@ export default {
   .url-container
     display block
     width 100%
+    border-top $border
+
+    &:last-child
+      border-bottom $border
 
     .url
       display block
