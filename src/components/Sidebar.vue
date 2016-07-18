@@ -1,12 +1,13 @@
 <template lang="jade">
-.terms
-  .term-details
-  .logo-container
+.sidebar
+  .pmg-logo-container
+    pokemon-go-logo
+  site-map
 </template>
 
 <script>
 import PokemonGoLogo from './PokemonGoLogo';
-import Login from './Login';
+import SiteMap from './SiteMap';
 
 export default {
   data() {
@@ -14,17 +15,19 @@ export default {
     };
   },
   components: {
-    Login, PokemonGoLogo,
+    PokemonGoLogo, SiteMap,
   },
 };
 </script>
 
 <style lang="stylus">
-.terms
-  .term-details
-    font-size 10px
-  .logo-container
-    width 200px
-    height 40px
+@import '../styles/variables'
 
+.sidebar
+  width $sidebar-width
+  height 100%
+  background-color white
+
+  .pmg-logo-container
+    padding 40px 40px 40px
 </style>

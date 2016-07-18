@@ -1,18 +1,20 @@
 <template lang="jade">
 #app
-  login-container
+  sidebar.left-sidebar
+  router-view.router-view(transition='fade', transition-mode='out-in')
 </template>
 
 <script>
-import LoginContainer from './components/LoginContainer';
+import Sidebar from './components/Sidebar';
 
 export default {
+  replace: false,
   data() {
     return {
     };
   },
   components: {
-    LoginContainer,
+    Sidebar,
   },
 };
 </script>
@@ -21,12 +23,27 @@ export default {
 @import "~normalize.css/normalize.css"
 @import './styles/palette'
 @import './styles/base'
-html
+@import './styles/variables'
+
+html, body
   height 100%
   width 100%
 body
-  height 100%
-  width 100%
   background: linear-gradient(to bottom right, $blue, $green);
 
+#app
+  height 100%
+
+.left-sidebar
+  position fixed
+  left 0
+  top 0
+
+.router-view
+  margin-left $sidebar-width
+
+.fade-transition
+  transition opacity .2s ease
+.fate-enter, .fade-leave
+  opacity 0
 </style>
