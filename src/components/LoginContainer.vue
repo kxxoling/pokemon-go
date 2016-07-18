@@ -23,6 +23,7 @@ export default {
 @import '../styles/mixins'
 .login-container
   width 400px
+  center()
 
   .pmg-logo
     width 240px

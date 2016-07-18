@@ -29,7 +29,4 @@ body
   width 100%
   background: linear-gradient(to bottom right, $blue, $green);
 
-.login-container
-  margin-left auto
-  margin-right auto
 </style>
