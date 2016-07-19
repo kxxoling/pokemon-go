@@ -39,6 +39,7 @@ export default {
 @import '../styles/pokemons.css'
 
 .pokemon
+  cursor pointer
   width 160px
   background-color white
   border-radius 4px
