@@ -42,6 +42,7 @@ body
 .router-view
   margin-left $sidebar-width
   padding-left 40px
+  overflow auto
 
 .fade-transition
   transition opacity .2s ease
