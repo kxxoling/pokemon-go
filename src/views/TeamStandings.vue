@@ -17,19 +17,19 @@ const teams = [
     name: 'mystic',
     gymCount: 8000,
     trainerCount: 100000,
-    image: './static/team-mystic.png',
+    image: './static/team-mystic.svg',
   },
   {
     name: 'instinct',
     gymCount: 8000,
     trainerCount: 100000,
-    image: './static/team-instinct.png',
+    image: './static/team-instinct.svg',
   },
   {
     name: 'valor',
     gymCount: 8000,
     trainerCount: 100000,
-    image: './static/team-valor.png',
+    image: './static/team-valor.svg',
   },
 ];
 export default {
