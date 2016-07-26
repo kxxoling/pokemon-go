@@ -1,5 +1,6 @@
 <template lang="jade">
 .pokedex
+  router-view
   h2.pokedex-title POKEDEX
     .filter
       label.choose-type Choose type:
@@ -14,6 +15,7 @@
     :id="pokemon.id",
     :name="pokemon.name",
     v-show="shouldShow(pokemon, filter)",
+    @click="pokemonDetails(pokemon.id)",
   )
 </template>
 
@@ -65,6 +67,9 @@ export default {
         return false;
       }
       return true;
+    },
+    pokemonDetails(pokemonId) {
+      this.$router.go({ name: 'pokemonDetails', params: { pokemonId } });
     },
   },
 };
