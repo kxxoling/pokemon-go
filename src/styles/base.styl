@@ -39,3 +39,16 @@ select
 input
   border none
   line-height 22px
+
+.pull-left
+  float left
+
+.pull-right
+  float right
+
+.clearfix
+  &:before, &:after
+    content " "
+    display table
+  &:after
+    clear both
