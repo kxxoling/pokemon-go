@@ -1,5 +1,13 @@
 # Pokemon Go Go Go!
 
+## Design and implementation
+
+The original design comes from Reddit user [@AlexKF0811](https://www.reddit.com/user/AlexKF0811) 
+[posted here](https://www.reddit.com/r/pokemongo/comments/4t5p7w/seeing_as_the_servers_were_down_today_i_decided/).
+
+And the design is invigorated and implemented by Kane Blueriver (@kxxoling) with Vue.js.
+
+
 ## Build Setup
 
 ``` bash
