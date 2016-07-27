@@ -14,6 +14,7 @@
     v-for="pokemon in pokedex",
     :id="pokemon.id",
     :name="pokemon.name",
+    :types="pokemon.types",
     v-show="shouldShow(pokemon, filter)",
     @click="pokemonDetails(pokemon.id)",
   )
