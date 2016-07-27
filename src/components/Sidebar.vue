@@ -27,6 +27,7 @@ export default {
   width $sidebar-width
   height 100%
   background-color white
+  z-index 1
 
   .pmg-logo-container
     padding 40px 40px 40px
