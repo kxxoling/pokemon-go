@@ -1,6 +1,7 @@
 <template lang="jade">
 .pokemon-viewer
-  .pkm(v-bind:class="className")
+  .pokemon-avatar
+    img(v-bind:src="avatar")
   .pokemon-details
     .pokemon-name {{pokemon.name}}
     hr.split-bar
@@ -35,8 +36,8 @@ export default {
       }
       return pokedex[this.pokemonId - 1];
     },
-    className() {
-      return `pkm${pad(this.pokemon.id)}`;
+    avatar() {
+      return `./static/pokemons/${pad(this.pokemonId)}.png`;
     },
   },
   data() {
@@ -55,13 +56,22 @@ $sky-blue = #3c78bb
 $border-spliter = 1px $light-grey solid
 
 .pokemon-viewer
-  width 280px
-  height 360px
+  width 320px
+  height 400px
   background-color $sky-blue
 
   .pkm
     display block
     center()
+
+  .pokemon-avatar
+    height 200px
+
+    img
+      display block
+      center()
+      height 100%
+      width auto
 
   .pokemon-details
     width 240px
@@ -72,6 +82,7 @@ $border-spliter = 1px $light-grey solid
 
     .pokemon-name
       text-align center
+
     .hp
       text-align center
     .split-bar
