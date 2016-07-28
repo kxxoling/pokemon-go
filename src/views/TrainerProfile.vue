@@ -1,8 +1,8 @@
 <template lang="jade">
 .trainer-profile.clearfix
   .trainer-avatar.pull-left
-    img(src="/static/trainer-male.png", v-if="gender==='male'")
-    img(src="/static/trainer-female.png", v-if="gender==='female'")
+    img(src="../assets/trainer-male.png", v-if="gender==='male'")
+    img(src="../assets/trainer-female.png", v-if="gender==='female'")
   profile.profile.pull-left
 </template>
 
