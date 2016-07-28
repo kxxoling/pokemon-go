@@ -44,9 +44,9 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/variables'
-@import '../styles/palette'
-@import '../styles/mixins'
+@import '~styles/variables'
+@import '~styles/palette'
+@import '~styles/mixins'
 
 margin-bottom()
   line-height 100%

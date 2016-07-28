@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Sidebar from './components/Sidebar';
+import Sidebar from 'components/Sidebar';
 
 export default {
   replace: false,
@@ -21,9 +21,9 @@ export default {
 
 <style lang="stylus">
 @import "~normalize.css/normalize.css"
-@import './styles/palette'
-@import './styles/base'
-@import './styles/variables'
+@import '~styles/palette'
+@import '~styles/base'
+@import '~styles/variables'
 
 html, body
   height 100%

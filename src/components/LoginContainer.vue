@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import PokemonGoLogo from './PokemonGoLogo';
-import Login from './Login';
+import PokemonGoLogo from 'components/PokemonGoLogo';
+import Login from 'components/Login';
 
 export default {
   data() {
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/mixins'
+@import '~styles/mixins'
 .login-container
   width 400px
   center()

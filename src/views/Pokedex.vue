@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import Pokemon from '../components/Pokemon';
-import pokedex from '../data/pokedex.json';
+import Pokemon from 'components/Pokemon';
+import pokedex from 'data/pokedex.json';
 
 const types = [
   'Grass',
@@ -77,8 +77,8 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/mixins'
-@import '../styles/palette'
+@import '~styles/mixins'
+@import '~styles/palette'
 
 .pokedex
   height 100%

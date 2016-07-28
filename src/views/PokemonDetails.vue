@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import PokemonViewer from '../components/PokemonViewer';
+import PokemonViewer from 'components/PokemonViewer';
 
 export default {
   data() {
@@ -19,8 +19,8 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/mixins'
-@import '../styles/palette'
+@import '~styles/mixins'
+@import '~styles/palette'
 
 .pokemon-viewer-container
   height 100%

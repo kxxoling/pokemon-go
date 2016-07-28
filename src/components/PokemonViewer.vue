@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import pokedex from '../data/pokedex.json';
-import { pad } from '../utils';
+import pokedex from 'data/pokedex.json';
+import { pad } from 'src/utils';
 
 export default {
   computed: {
@@ -49,8 +49,8 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/mixins'
-@import '../styles/palette'
+@import '~styles/mixins'
+@import '~styles/palette'
 
 $sky-blue = #3c78bb
 $border-spliter = 1px $light-grey solid

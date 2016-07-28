@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/palette'
+@import '~styles/palette'
 $border = 1px solid #eee
 .site-map
   ul

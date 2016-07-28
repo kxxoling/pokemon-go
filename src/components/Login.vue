@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/mixins'
-@import '../styles/palette'
+@import '~styles/mixins'
+@import '~styles/palette'
 
 bg-drift()
   background-position: center;

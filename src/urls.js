@@ -1,12 +1,12 @@
-import TrainerProfile from './views/TrainerProfile';
-import Friends from './views/Friends';
-import Pokedex from './views/Pokedex';
-import GlobalMap from './views/GlobalMap';
-import TeamStandings from './views/TeamStandings';
-import Missions from './views/Missions';
-import MeetupEvents from './views/MeetupEvents';
-import PokemonTv from './views/PokemonTv';
-import PokemonDetails from './views/pokemonDetails';
+import TrainerProfile from 'views/TrainerProfile';
+import Friends from 'views/Friends';
+import Pokedex from 'views/Pokedex';
+import GlobalMap from 'views/GlobalMap';
+import TeamStandings from 'views/TeamStandings';
+import Missions from 'views/Missions';
+import MeetupEvents from 'views/MeetupEvents';
+import PokemonTv from 'views/PokemonTv';
+import PokemonDetails from 'views/pokemonDetails';
 
 export default {
   '/profile': {

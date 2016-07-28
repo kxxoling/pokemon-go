@@ -37,7 +37,7 @@ export default {
 
 <style lang="stylus">
 @import '~leaflet/dist/leaflet.css'
-@import '../styles/variables'
+@import '~styles/variables'
 
 .map-binder
   height 100%

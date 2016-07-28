@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import PokemonGoLogo from './PokemonGoLogo';
-import SiteMap from './SiteMap';
+import PokemonGoLogo from 'components/PokemonGoLogo';
+import SiteMap from 'components/SiteMap';
 
 export default {
   data() {
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/variables'
+@import '~styles/variables'
 
 .sidebar
   width $sidebar-width

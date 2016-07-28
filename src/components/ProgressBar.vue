@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/palette'
+@import '~styles/palette'
 $grey = #aaa
 $height = 8
 

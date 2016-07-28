@@ -1,7 +1,9 @@
 var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
-var projectRoot = path.resolve(__dirname, '../')
+
+const projectRoot = path.resolve(__dirname, '../')
+const src = path.resolve(projectRoot, 'src')
 
 module.exports = {
   entry: {
@@ -16,9 +18,13 @@ module.exports = {
     extensions: ['', '.js', '.vue'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
-      'src': path.resolve(__dirname, '../src'),
-      'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../src/components')
+      src,
+      assets: path.resolve(src, 'assets'),
+      components: path.resolve(src, 'components'),
+      views: path.resolve(src, 'views'),
+      styles: path.resolve(src, 'styles'),
+      data: path.resolve(src, 'data'),
+      static: path.resolve(projectRoot, 'static'),
     }
   },
   resolveLoader: {

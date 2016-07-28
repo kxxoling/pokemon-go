@@ -49,8 +49,8 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/variables'
-@import '../styles/palette'
+@import '~styles/variables'
+@import '~styles/palette'
 
 .meetup-events
   padding 40px 80px

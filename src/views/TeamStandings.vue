@@ -23,26 +23,26 @@
 </template>
 
 <script>
-import TeamCard from '../components/TeamCard';
+import TeamCard from 'components/TeamCard';
 
 const teams = [
   {
     name: 'mystic',
     gymCount: 8000,
     trainerCount: 100000,
-    image: './static/team-mystic.svg',
+    image: 'static/team-mystic.svg',
   },
   {
     name: 'instinct',
     gymCount: 8000,
     trainerCount: 100000,
-    image: './static/team-instinct.svg',
+    image: 'static/team-instinct.svg',
   },
   {
     name: 'valor',
     gymCount: 8000,
     trainerCount: 100000,
-    image: './static/team-valor.svg',
+    image: 'static/team-valor.svg',
   },
 ];
 export default {
@@ -58,9 +58,9 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/variables'
-@import '../styles/palette'
-@import '../styles/mixins'
+@import '~styles/variables'
+@import '~styles/palette'
+@import '~styles/mixins'
 
 $team-card-width = 240px
 

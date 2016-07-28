@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { pad } from '../utils';
+import { pad } from 'src/utils';
 
 export default {
   props: {
@@ -38,9 +38,9 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/mixins'
-@import '../styles/palette'
-@import '../styles/pokemons.css'
+@import '~styles/mixins'
+@import '~styles/palette'
+@import '~styles/pokemons.css'
 
 .pokemon
   cursor pointer

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ProgressBar from './ProgressBar';
+import ProgressBar from 'components/ProgressBar';
 
 const user = {
   name: 'Kane Blueriver',
@@ -36,8 +36,8 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/palette'
-@import '../styles/mixins'
+@import '~styles/palette'
+@import '~styles/mixins'
 
 $line-height = 32
 
