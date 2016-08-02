@@ -1,7 +1,7 @@
 <template lang="jade">
-.pokemon-viewer-container
+.pokemon-viewer-details
   .close(@click="$router.go({name: 'pokedex'})")
-  pokemon-viewer.pokemon-viewer
+  pokemon-viewer.pokedex-card
 </template>
 
 <script>
@@ -22,13 +22,14 @@ export default {
 @import '~styles/mixins'
 @import '~styles/palette'
 
-.pokemon-viewer-container
+.pokemon-viewer-details
   height 100%
   width 100%
   position fixed
   left 0
   top 0
   background-color $hover-background-color
+  z-index 2
 
   .close
     cursor pointer
@@ -56,7 +57,8 @@ export default {
     &::after
       transform rotate(-45deg)
 
-  .pokemon-viewer
+  .pokedex-card
+    box-shadow 0 0 10px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)
     margin-top 200px
     opacity 1
     center()
