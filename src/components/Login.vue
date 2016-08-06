@@ -1,12 +1,12 @@
 <template lang="jade">
-.login
+.login-container
   h2.player-login PLAYER LOGIN
-  .login-buttons
-    a(href="#").login-button.login-buttons--google
-      img.login-button-icon(src="../assets/google.ico")
+  .auth-buttons
+    a(href="#").auth-button.auth-buttons--google
+      img.auth-button-icon(src="../assets/google.ico")
       | Google
-    a(href="#").login-button.login-buttons--trainer-club
-      img.login-button-icon(src="../assets/pm-ball-icon.png")
+    a(href="#").auth-button.auth-buttons--trainer-club
+      img.auth-button-icon(src="../assets/pm-ball-icon.png")
       | Trainer Club
   .privacy PRIVACY POLICY
 </template>
@@ -29,20 +29,26 @@ export default {
 bg-drift()
   background-position: center;
 
-$login-button-width = 200px
+$auth-button-width = 200px
 
 .login-container
   color $blue
   font-weight bold
   text-align center
+  background-color white
+  width 300px
+  padding 40px 40px
 
-  .login-buttons
-    margin-bottom 20px
+  .player-login
+    margin-bottom 30px
 
-    .login-button
+  .auth-buttons
+    margin-bottom 30px
+
+    .auth-button
       center()
       text-align center
-      width $login-button-width
+      width $auth-button-width
       padding 4px
       line-height 28px
       color #777
@@ -52,7 +58,7 @@ $login-button-width = 200px
       border-radius 4px
       position relative
 
-    .login-button-icon
+    .auth-button-icon
       height 24px
       position absolute
       left 8px
